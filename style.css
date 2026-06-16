@@ -1,0 +1,22 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:linear-gradient(135deg,#1a002a,#7a004e,#ff4d88);overflow:hidden;color:white}
+#loginPage{height:100vh;display:flex;justify-content:center;align-items:center}
+.glass-card{background:rgba(255,255,255,.15);backdrop-filter:blur(15px);padding:35px;border-radius:25px;width:350px;text-align:center}
+input,button{width:100%;padding:14px;border:none;border-radius:12px;margin:10px 0}
+button{background:#ff4d88;color:#fff;cursor:pointer}
+#birthdayPage{display:none;height:100vh;overflow:auto;text-align:center;padding:20px}
+.title{text-shadow:0 0 15px white}
+.cake{position:relative;width:350px;height:300px;margin:30px auto}
+.tier{position:absolute;left:50%;transform:translateX(-50%);border-radius:20px}
+.top{width:180px;height:60px;bottom:180px;background:#ffd0e4}
+.middle{width:260px;height:80px;bottom:100px;background:#ffb3cf}
+.bottom{width:350px;height:100px;bottom:0;background:#ff8ab7}
+.bottom span{line-height:100px;font-size:40px;font-weight:bold}
+.candles{position:absolute;bottom:240px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+.candle{width:10px;height:40px;background:white;position:relative}
+.flame{position:absolute;top:-14px;left:-4px;width:18px;height:18px;background:gold;border-radius:50%;box-shadow:0 0 20px gold;animation:flicker .4s infinite alternate}
+@keyframes flicker{to{transform:scale(1.3)}}
+.gallery{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:30px 0}
+.gallery img{width:180px;height:180px;object-fit:cover;border-radius:20px}
+.heart{position:fixed;font-size:30px;animation:floatUp linear infinite}
+@keyframes floatUp{0%{transform:translateY(100vh)}100%{transform:translateY(-120vh)}}
